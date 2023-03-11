@@ -1,0 +1,17 @@
+@import './varialbleFlex';
+.nav {
+  @include flex(row, space-between);
+  padding: 5px 10px;
+  height: 100px;
+  h1 {
+    font-family: 'Tilt Prism';
+  }
+  .navLink {
+    text-decoration: none;
+    font-family: $fpoppins;
+    padding: 5px;
+  }
+  @media (max-width: 800px) {
+    @include flex(column, center);
+  }
+}

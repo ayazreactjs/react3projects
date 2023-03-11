@@ -1,0 +1,30 @@
+@import './varialbleFlex';
+@import './button';
+.revContainer {
+  @include flex(column, center);
+  height: calc(100vh - 100px);
+
+  .revContent {
+    @include flex(column, center);
+    p {
+      max-width: 320px;
+      text-align: justify;
+    }
+    .btnBox {
+      @include flex(row, space-between);
+      max-width: 320px;
+      width: 100%;
+    }
+    .revImg {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
+// @media (max-width: 767px) {
+//   .revContainer {
+//     height: calc(100vh - 100px);
+//   }
+// }

@@ -1,0 +1,25 @@
+@import './varialbleFlex';
+
+@import './button';
+.main {
+  height: calc(100vh - 100px);
+
+  .bContainer {
+    @include flex(column, center);
+    height: 500px;
+    .bContent {
+      @include flex(column, center);
+      margin: 5px;
+      .bData {
+        @include flex(row, center);
+        flex-wrap: wrap;
+        .bImg {
+          height: 75px;
+          height: 75px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

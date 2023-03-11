@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Poppins', 'Tilt Prism';
+  font-size: 20px;
+}
+@import './varialbleFlex';
+@import './nav';
+@import './button';
+@import './birthday';
+@import './review';

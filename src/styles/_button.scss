@@ -1,0 +1,25 @@
+@import './varialbleFlex';
+button {
+  padding: 5px 10px;
+  border-radius: 24px;
+  border-color: $magenta;
+  cursor: pointer;
+}
+.btn {
+  cursor: pointer;
+  animation: scale 1s ease-in-out infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

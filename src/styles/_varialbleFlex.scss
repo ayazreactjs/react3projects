@@ -1,0 +1,23 @@
+$red: #ff3333;
+$green: #33ff33;
+$greenLight: #99ff99;
+$blue: #3333ff;
+$blueLight: #6666ff;
+$yellow: #ffff33;
+$cyan: #33ffff;
+$magenta: #ff33ff;
+$magentaLight: #ff99ff;
+$charcoal: #36454f;
+$linen: #e9dcc9;
+
+// *********End of My Colors******************
+$fpoppins: Poppins;
+$froboto: Roboto;
+$fTilt: 'Tilt Prism';
+// ***  Mixin-Flex ***
+@mixin flex($fDirection: row, $fjusticyC: center) {
+  display: flex;
+  flex-direction: $fDirection;
+  justify-content: $fjusticyC;
+  align-items: center;
+}
